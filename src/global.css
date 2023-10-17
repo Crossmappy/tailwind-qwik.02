@@ -1,0 +1,55 @@
+/**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  .btn {
+    @apply bg-red-700 text-white mt-10 py-10 md:py-4 px-5 inline-block rounded-lg text-sm md:text-lg shadow-lg w-full sm:w-auto hover:bg-red-800 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-red-800 focus:ring-opacity-50 active:bg-red-900
+  };
+
+  .input {
+   @apply px-5 py-3 text-black border-gray-300 shadow-sm rounded min-w-full focus:ring-2 focus:ring-red-800 focus:ring-opacity-50 focus:border-transparent
+  };
+}
+
+
+
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+body {
+  padding: 0;
+  line-height: inherit;
+}
